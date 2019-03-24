@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  mysql:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=secretpass
+      - MYSQL_DATABASE=voluntario
+
+  myapp:
+    tty: true
+    image: bitnami/laravel:5-debian-9
+    environment:
+      - DB_HOST=mysql
+      - DB_USERNAME=root
+      - DB_DATABASE=voluntario
+      - DB_PASSWORD=secretpass
+    depends_on:
+      - mysql
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app

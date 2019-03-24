@@ -11,14 +11,14 @@
 
 ### rodando com docker
 
- docker run --rm --interactive --tty \
-  --volume ~/code/escala-voluntario:/app -w /app \
-  -p 8000:8000 \
-  php:7-cli php artisan serve --host 0.0.0.0 --port 8000
+ docker-compose up -d
+
+ docker ps
 
  docker run --rm --interactive --tty \
   --volume ~/code/escala-voluntario:/app -w /app \
   -p 8000:8000 \
   php:7-cli php artisan list
 
-  docker run --name mysqlev -e MYSQL_ROOT_PASSWORD=secretpass -d mysql:5.7
+  docker run --rm --name mysqlev -e MYSQL_ROOT_PASSWORD=secretpass -e MYSQL_DATABASE=voluntario -p 3306:3306 -d mysql:5.7
+  docker run --rm --name adminerc -p 9876:8080 -d adminer
