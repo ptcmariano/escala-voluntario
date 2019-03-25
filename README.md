@@ -8,6 +8,9 @@
 * Exibir os dias disponíveis para as visitas dos voluntários
 * Ao selecionar um voluntário, deve mostrar o dia e local onde será a visita
 
+## planejamento do projeto
+
+* Para ter um plano de desenvolvimento e prototipos foi criado uma pasta com a documentação em [(/docs/README.md)](/docs/README.md)
 
 ### rodando com docker
 
