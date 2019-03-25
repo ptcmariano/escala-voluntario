@@ -37,4 +37,4 @@
 
 - [x] Painel Voluntário - visualizar escala
 
-!["wireframe painel voluntario escalas"]("./wireframes/Painel Voluntario - Visualização de escala.png")
+!["wireframe painel voluntario escalas"](https://github.com/ptcmariano/escala-voluntario/raw/master/docs/wireframes/Painel%20Voluntario%20-%20Visualiza%C3%A7%C3%A3o%20de%20escala.png)
